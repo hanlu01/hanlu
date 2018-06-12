@@ -19,21 +19,26 @@
 	<!-- lang -->
 		<div class="lang">
 			<h4>欢迎登陆</h4>
-			<a href="javascript:;">立即注册</a>
+			<a href="register.html">立即注册</a>
 			<span>还没有账号？</span>
 				<form action="javascript:;">
 					<p class="lang_01">
 						<img src="img/lang/lang1.jpg" alt="">
-						<input type="text" placeholder="邮箱/账号/已验证手机">
+						<input type="text" placeholder="邮箱/账号/已验证手机" class="shouji">
+						<span id="phoneMsg"></span>
 					</p>
 					<p class="lang_01">
 						<img src="img/lang/lang2.jpg" alt="">
-						<input type="text" placeholder="密码">
+						<input type="password" placeholder="密码" class="mima">
+						<span id="password"></span>
 					</p>
 					<div class="last_input">
 					<p class="lang_01 lang_input" >
 						<img src="img/lang/lang2.jpg" alt="">
-						<input class="lang_input1" type="text" placeholder="请输入答案"><img  id="imgsj" src="img/lang/s0.jpg" alt="">
+						<input class="lang_input1" type="text" placeholder="请输入答案">
+						<span class="imgsj">
+							<img class="img_pos" src="img/lang/s0.jpg"/>
+						</span>
 					</p>
 					</div>
 				</form>

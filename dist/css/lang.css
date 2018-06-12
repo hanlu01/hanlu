@@ -70,7 +70,8 @@ ul {
       margin-top: 32px;
       margin-right: 20px; }
     .max_img .lang .lang_01 {
-      float: left; }
+      float: left;
+      position: relative; }
       .max_img .lang .lang_01 img {
         margin: 21px 0 0 20px; }
       .max_img .lang .lang_01 input {
@@ -79,16 +80,34 @@ ul {
         margin-top: 21px;
         border: 1px solid #ccc;
         border-left: none;
-        color: #a9a9a9; }
+        color: #a9a9a9;
+        float: left;
+        text-indent: 10px; }
+      .max_img .lang .lang_01 #phoneMsg {
+        position: absolute;
+        top: -30px;
+        left: 63px; }
+      .max_img .lang .lang_01 #password {
+        position: absolute;
+        top: -30px;
+        left: 63px; }
       .max_img .lang .lang_01 .lang_input {
         width: 110px;
         height: 37px; }
       .max_img .lang .lang_01 .lang_input1 {
         width: 80px; }
-    .max_img .lang #imgsj {
-      margin-top: 0;
-      width: 64px;
-      height: 30px; }
+    .max_img .lang .imgsj {
+      display: block;
+      width: 98px;
+      height: 40px;
+      margin-top: 24px;
+      margin-left: 18px;
+      position: relative; }
+      .max_img .lang .imgsj .img_pos {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0; }
   .max_img .radio_input {
     margin: 255px 0 0 18px;
     color: #a9a9a9;

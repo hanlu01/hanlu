@@ -61,11 +61,10 @@ function fadeInOut(outOrd,inOrd){//2,4
 	
 }
 
-$(function(){	
+window.onload = function(){
 	initUI();
-	
 	changeImg();
-	
+	qwe();	
 	$("#banner").mouseenter(function(){
 		clearInterval(myTimer);
 	});
@@ -75,14 +74,29 @@ $(function(){
 	
 	$("#btns li").click(function(){
 		$("#banner img").eq(ord).stop(true,true);
-		
 		let index = $("#btns li").index(this);
 		showImg(ord,index);
-		
-
-	
-});
+	});
 
 
+	//侧边栏显示或隐藏
+	$(".yincang").click(function(){
+		$(this).siblings().toggle(500);
+	})
 
+	qwe();
+}
+function qwe(){
+	let g= document.getElementById('logo');
+	let t = scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	if(t>30){
+		g.style.position = "fixed";
+		g.style.top = 0;
+		g.style.opacity = ".8";
+
+	}else{
+		g.style.position = "";
+		g.style.top = "30px";
+	}
+}
 

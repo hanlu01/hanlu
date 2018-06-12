@@ -79,7 +79,7 @@ ul {
 		}
 		.lang_01{
 			float: left;
-			
+			position: relative;
 			img{
 				margin:21px 0 0 20px;
 
@@ -91,6 +91,19 @@ ul {
 				border:1px solid #ccc;
 				border-left: none;
 				color: #a9a9a9;
+				float: left;
+				text-indent: 10px;
+
+			}
+			#phoneMsg{
+				position: absolute;
+				top:-30px;
+				left:63px;
+			}
+			#password{
+				position: absolute;
+				top:-30px;
+				left:63px;
 			}
 			.lang_input{
 				width: 110px;
@@ -99,13 +112,23 @@ ul {
 			.lang_input1{
 				width: 80px;
 			}
+			
 		}
-		#imgsj{
-			margin-top: 0;
-			width: 64px;
-			height: 30px;
+		.imgsj{
+			display: block;
+			width: 98px;
+			height:40px;
+			margin-top: 24px;
+			margin-left: 18px;
+			position: relative;
+			.img_pos{
+				position: absolute;
+				top:0px;
+				left: 0px;
+				margin:0;
+			}
 		}
-		
+
 
 	}
 	.radio_input{

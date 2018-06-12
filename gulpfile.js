@@ -18,11 +18,12 @@ gulp.task("copy",function(){
 	.pipe(gulp.dest("E:\\hanlu\\dist"));
 });
 
-//复制图片文件
-// gulp.task("images",function(){
-// 	gulp.src("img/*.jpg")
-// 	.pipe(gulp.dest("D:\\Documents\\Desktop\\aaa\\img"));
-// });
+
+// 复制图片文件
+gulp.task("images",function(){
+	gulp.src("img/**/*.{jpg,png}")
+	.pipe(gulp.dest("E:\\hanlu\\dist\\img"));
+});
 
 //合并文件
 // gulp.task("concatjs",function(){
@@ -69,7 +70,7 @@ gulp.task("watch",function(){
 	gulp.watch("sass/*.scss",["sassin"]);
 	gulp.watch("js/*.js",["js"]);
 	gulp.watch("*.html",["copy"]);
-	// gulp.watch("img/*.{jpg,png}",["images"]);
+	gulp.watch("img/**/*.{jpg,png}",["images"]);
 	// gulp.watch(["js/*.js","js/goodslist.js"],["concatanduglifyandrenamejs"]);
 });
 
