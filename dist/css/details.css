@@ -500,9 +500,207 @@ a .fixed_right01 {
     .title a:hover {
       color: #008842; }
 
-.mag {
+.details {
   width: 1202px;
-  height: 622px;
+  height: 597px;
   margin: 0 auto;
-  background: pink;
-  position: relative; }
+  overflow: hidden; }
+
+.details-left {
+  float: left;
+  margin-right: 20px; }
+  .details-left img {
+    vertical-align: bottom; }
+
+.big-pic {
+  position: relative;
+  margin-bottom: 10px; }
+  .big-pic li {
+    display: none; }
+  .big-pic .active {
+    display: block; }
+  .big-pic .new {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px; }
+
+.small-pic {
+  overflow: hidden; }
+  .small-pic li {
+    margin-right: 16px;
+    float: left;
+    border: 1px solid #bcbcbc;
+    cursor: pointer; }
+  .small-pic .active {
+    border-color: #008842; }
+
+.details-right {
+  float: left;
+  width: 680px; }
+  .details-right h2 {
+    font-weight: 100;
+    font-size: 24px;
+    color: #444;
+    line-height: 36px; }
+  .details-right h3 {
+    font-weight: 100;
+    font-size: 16px;
+    color: #777;
+    line-height: 30px; }
+
+.price {
+  height: 90px;
+  padding: 0 24px;
+  margin-top: 37px;
+  background: #fff;
+  margin-bottom: 20px; }
+  .price .price-left {
+    float: left;
+    padding-top: 5px; }
+    .price .price-left span {
+      font-size: 12px;
+      color: #444; }
+    .price .price-left i {
+      font-size: 22px;
+      color: #ff0000; }
+    .price .price-left b {
+      color: #ff0000;
+      font-size: 32px; }
+  .price .price-right {
+    text-align: center;
+    width: 75px;
+    float: right;
+    font-size: 12px;
+    color: #999;
+    padding-top: 10px; }
+    .price .price-right span {
+      line-height: 24px; }
+    .price .price-right i {
+      line-height: 24px;
+      color: #e8380d; }
+    .price .price-right a {
+      color: #999; }
+      .price .price-right a:hover {
+        color: #008842; }
+
+.buy-left {
+  float: left;
+  width: 514px;
+  border-top: 1px dashed #d9d9d9;
+  padding-top: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-right: 20px; }
+
+.style-chose {
+  line-height: 52px;
+  font-size: 12px;
+  color: #444;
+  overflow: hidden; }
+  .style-chose .size {
+    float: left; }
+  .style-chose a {
+    float: left;
+    border: 1px solid #e2e2e2;
+    color: #444;
+    background: #fff;
+    margin-left: 10px; }
+    .style-chose a span {
+      display: block;
+      text-align: center;
+      line-height: 25px;
+      padding: 0 8px;
+      border-bottom: 1px solid #e2e2e2; }
+      .style-chose a span:last-child {
+        border-bottom: 0; }
+    .style-chose a:hover {
+      border-color: #008842; }
+    .style-chose a:hover span {
+      border-color: #008842; }
+  .style-chose .active {
+    border-color: #008842; }
+    .style-chose .active span {
+      border-color: #008842; }
+
+.notice {
+  line-height: 60px;
+  font-size: 12px;
+  color: #999; }
+  .notice span {
+    color: #008842; }
+
+.attention {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 16px;
+  background: url(../../img/details/attention.png) left center no-repeat;
+  text-indent: 20px; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.num-chose {
+  font-size: 12px;
+  color: #444; }
+  .num-chose p {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    margin: 0 20px; }
+    .num-chose p a {
+      position: absolute;
+      display: block;
+      width: 16px;
+      line-height: 19px;
+      text-align: center;
+      font-size: 12px;
+      color: #000;
+      border: 1px solid #e2e2e2; }
+    .num-chose p .add {
+      border-left: 0;
+      right: -17px;
+      top: 0; }
+    .num-chose p .minus {
+      border-left: 0;
+      border-top: 0;
+      right: -17px;
+      bottom: 0; }
+  .num-chose input {
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    vertical-align: middle;
+    font-size: 14px;
+    display: block; }
+  .num-chose .add-car {
+    display: inline-block;
+    width: 187px;
+    height: 43px;
+    line-height: 43px;
+    text-indent: 66px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    vertical-align: bottom;
+    background: #008842 url(../../img/details/goods-car.png) 29px center no-repeat; }
+
+.buy-right {
+  height: 247px;
+  border-left: 1px solid #d9d9d9;
+  float: left;
+  padding-left: 10px; }
+  .buy-right li {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px; }
+    .buy-right li span {
+      display: inline-block;
+      width: 60px; }
