@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>注册</title>
-<link rel="stylesheet" type="text/css" href="dist/css/register.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
 <body>
 <!-- header -->
@@ -19,7 +19,7 @@
 	</div>
 <!-- center_middle -->
 	<div class="center_middle">
-		<form action="javascript:;">
+		<form method="post" action="register.php">
 			<p class="number">
 				<span>图形验证码</span>
 				<input type="text" class="yanzheng" placeholder="请输入答案">
@@ -29,7 +29,7 @@
 			</p>
 			<p class="phone">
 				<span>手机号</span>
-				<input type="text" class="shouji" placeholder="请输入您的手机号">
+				<input type="text"  name="userphone" class="shouji" placeholder="请输入您的手机号" id="userphone">
 				<span id="phoneMsg"></span>
 			</p>
 			<p class="code">
@@ -39,12 +39,12 @@
 			</p>
 			<p class="password01">
 				<span>设置密码</span>
-				<input type="password" class="mima" placeholder="6-16位字母、数字、下划线">
+				<input type="password"  name="userpass" class="mima" placeholder="6-16位字母、数字、下划线" id="userpass">
 				<span id="password"></span>
 			</p>
 			<p class="password01">
 				<span>确认密码</span>
-				<input type="password" class="mima mima_s" placeholder="再次输入密码">
+				<input type="password" class="mima" id="mima_s" placeholder="再次输入密码">
 				<span id="password_s"></span>
 			</p>
 			<p class="password01 yaoqing">
@@ -169,3 +169,4 @@
 </html>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
+<!-- <script type="text/javascript" src="js/cookie.js"></script> -->

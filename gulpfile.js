@@ -9,20 +9,32 @@ var sass = require("gulp-sass");
 gulp.task("sassin",function(){
 	gulp.src(["sass/*.scss"])
 	.pipe(sass())
-	.pipe(gulp.dest("E:\\hanlu\\dist\\css"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\hanlu\\css"));
 });
 
 //定义一个复制文件的任务（命令）
 gulp.task("copy",function(){
 	gulp.src("*.html")
-	.pipe(gulp.dest("E:\\hanlu\\dist"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\hanlu"));
 });
 
 
 // 复制图片文件
 gulp.task("images",function(){
-	gulp.src("img/**/*.{jpg,png}")
-	.pipe(gulp.dest("E:\\hanlu\\dist\\img"));
+	gulp.src("img/**/*.{jpg,png,gif}")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\hanlu\\img"));
+});
+
+//js监听
+gulp.task("js",function(){
+	gulp.src("js/*.js")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\hanlu\\js"));
+});
+
+//php监听
+gulp.task("php",function(){
+	gulp.src("php/*.php")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\hanlu\\php"));
 });
 
 //合并文件
@@ -60,17 +72,15 @@ gulp.task("images",function(){
 // 	.pipe(gulp.dest("E:\\hanlu\\dist\\js"));
 // });
 
-gulp.task("js",function(){
-	gulp.src("js/*.js")
-	.pipe(gulp.dest("E:\\hanlu\\dist\\js"));
-});
+
 
 //启动监听器
 gulp.task("watch",function(){
 	gulp.watch("sass/*.scss",["sassin"]);
 	gulp.watch("js/*.js",["js"]);
+	gulp.watch("php/*.php",["php"]);
 	gulp.watch("*.html",["copy"]);
-	gulp.watch("img/**/*.{jpg,png}",["images"]);
+	gulp.watch("img/**/*.{jpg,png,gif}",["images"]);
 	// gulp.watch(["js/*.js","js/goodslist.js"],["concatanduglifyandrenamejs"]);
 });
 

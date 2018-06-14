@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>登陆</title>
-<link rel="stylesheet" type="text/css" href="dist/css/lang.css">
+<link rel="stylesheet" type="text/css" href="css/lang.css">
 </head>
 <body>
 <!-- header -->
@@ -15,7 +15,7 @@
 	</div>
 <!-- max_img -->
 	<div class="max_img">
-		<img src="img/lang/login.jpg" alt="">
+		<img src="img/lang/login.jpg"/>
 	<!-- lang -->
 		<div class="lang">
 			<h4>欢迎登陆</h4>
@@ -24,12 +24,12 @@
 				<form action="javascript:;">
 					<p class="lang_01">
 						<img src="img/lang/lang1.jpg" alt="">
-						<input type="text" placeholder="邮箱/账号/已验证手机" class="shouji">
+						<input type="text" placeholder="邮箱/账号/已验证手机" class="shouji" id="userphone">
 						<span id="phoneMsg"></span>
 					</p>
 					<p class="lang_01">
 						<img src="img/lang/lang2.jpg" alt="">
-						<input type="password" placeholder="密码" class="mima">
+						<input type="password" placeholder="密码" class="mima" id="userpass">
 						<span id="password"></span>
 					</p>
 					<div class="last_input">
@@ -46,7 +46,7 @@
 					<input type="radio">自动登录
 					<span>忘记登陆密码?</span>
 				</div>
-				<div class="denglu">提交</div>
+				<div class="denglu" id="btn">提交</div>
 				<span class="disan">第三方登陆</span>
 				<img src="img/lang/bg-1.png" class="bg_1">
 				<img src="img/lang/bg-2.png" class="bg_1">
@@ -151,7 +151,7 @@
 		<p>
 			<a href="javascript:;"><img src="img/common/right-1.png" alt=""></a>
 			<a href="javascript:;"><img class="height" src="img/common/right-2.png" alt=""></a>
-			<a href="javascript:;"><img src="img/common/right-3.gif" alt=""></a>
+			<!-- <a href="javascript:;"><img src="img/common/right-3.gif" alt=""></a> -->
 			<a href="javascript:;"><img class="gongan" src="img/common/right-4.png" alt=""><span>沪公网安备 31010502000002号</span></a>
 		</p>
 		</div>
@@ -160,3 +160,4 @@
 </html>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>

@@ -84,8 +84,14 @@ window.onload = function(){
 		$(this).siblings().toggle(500);
 	})
 
+	//顶部的固定栏
 	qwe();
+
+	//获取cookie
+	let cookie = getCookie("userphone");
+	$(".deng").text("亲"+cookie);
 }
+
 function qwe(){
 	let g= document.getElementById('logo');
 	let t = scrollTop = document.body.scrollTop || document.documentElement.scrollTop;

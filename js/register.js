@@ -31,16 +31,16 @@ window.onload = function(){
 		}
 	})
 
-	//确认密码
-	// $(".mima_s").focusout(function(){
-	// 	if($(".mima").val() == $(".mima_s").val()){
-	// 		$("mima_s").text("√");
-	// 		$(".mima_s").css({"color":"green"});
-	// 	}else{
-	// 		$("mima_s").text("密码不一样");
-	// 		$(".mima_s").css({"color":"red"});
-	// 	}
-	// })
+	// 确认密码
+	$("#mima_s").focusout(function(){
+		if($(".mima").val() == $("#mima_s").val()){
+			$("#password_s").text("√");
+			$("#password_s").css({"color":"green"});
+		}else{
+			$("#password_s").text("密码不一样");
+			$("#password_s").css({"color":"red"});
+		}
+	})
 
 }
 

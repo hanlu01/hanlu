@@ -26,6 +26,45 @@ ul {
 	padding: 0;
 	list-style-type: none;
 }
+
+
+/*鼠标样式*/
+body{cursor:url('http://iqzhan.cn/images/cursor/curos.cur'),auto!important;}
+a{cursor:url('http://iqzhan.cn/images/cursor/curoslink.cur'),auto;}
+input{cursor:url('http://iqzhan.cn/images/cursor/curostext.cur'),auto;}
+button{cursor:url('http://iqzhan.cn/images/cursor/curoslink.cur'),auto;}
+img{cursor:url('http://iqzhan.cn/images/cursor/curos.cur'),auto; }
+
+
+
+//滚动条
+::-webkit-scrollbar/*整体部分*/
+{
+width: 5px;
+height: 5px;
+}
+
+::-webkit-scrollbar-track/*滑动轨道*/
+{
+-webkit-box-shadow: inset 0 0  5px rgba(0,0,0,0.2);
+border-radius: 0px;
+background: #12fafd /*rgba(0,0,0,0.1)*/;
+}
+
+::-webkit-scrollbar-thumb/*滑块*/
+{
+border-radius:  5px;
+-webkit-box-shadow: inset 0 0  5px rgba(0,0,0,0.2);
+background: #12a7fd /*rgba(0,0,0,0.2)*/;
+}
+
+::-webkit-scrollbar-thumb:hover/*滑块效果*/
+{
+border-radius:  5px;
+-webkit-box-shadow: inset 0 0  5px rgba(0,0,0,0.2);
+background: #39fd70 /*rgba(0,0,0,0.4)*/;
+}
+
 // fixed
 .fixed_max{	
 	.fixed_right{
@@ -741,3 +780,6 @@ a{
 		height: 20px;
 	}
 }
+
+
+

@@ -1,5 +1,5 @@
-window.onload = function(){
-	// 验证码
+$(function(){
+	// 图片验证码
 	$(".img_pos").click(function(){
 		let $index=parseInt(Math.random()*6);
 		$(".img_pos").attr("src","img/lang/s"+$index+".jpg");
@@ -28,8 +28,7 @@ window.onload = function(){
 
 		}
 	})
-}
-
+})
 
 
 function checkAll(type,value){
@@ -51,3 +50,33 @@ function checkAll(type,value){
 	}
 	return false;	
 }
+
+
+
+
+//ajax
+function a(id){
+		return document.getElementById(id);
+	}
+	window.onload=function(){
+		a("btn").onclick=function(){
+
+			let xhr=new XMLHttpRequest();
+
+			xhr.open("post","lang.php",true);
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					if(xhr.responseText==1){
+						saveCookie("userphone",a("userphone").value,7);
+						window.location.href = "index.html";
+						alert("登陆成功！");
+					}else{
+						alert("用户名或者密码不对，请重新输入！");
+					}
+				}
+			}
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			let sendstr = "userphone="+a("userphone").value+"&userpass="+a("userpass").value;
+			xhr.send(sendstr);
+		}
+	}
